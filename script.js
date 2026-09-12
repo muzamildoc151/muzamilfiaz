@@ -1,4 +1,16 @@
-const menu=document.querySelector(".menu"),links=document.querySelector(".links");
-menu.addEventListener("click",()=>links.classList.toggle("open"));
-document.querySelectorAll(".links a").forEach(a=>a.addEventListener("click",()=>links.classList.remove("open")));
-document.getElementById("year").textContent=new Date().getFullYear();
+// Mobile menu toggle
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+  });
+
+  // Close menu when a nav link is clicked
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+    });
+  });
+}
