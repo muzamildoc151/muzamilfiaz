@@ -39,6 +39,27 @@
     font-family:var(--serif); font-style:italic; font-size:21px; line-height:1.5; color:var(--ink);
     border-left:3px solid var(--teal); padding:4px 0 4px 24px; margin:36px 0;
   }
+  /* ---------- SUBSCRIBE (compact) ---------- */
+  .subscribe-inline{
+    max-width:700px; margin:56px auto 0; padding:30px 30px 26px; border:1px solid var(--line);
+    border-radius:6px; background:var(--paper-2);
+  }
+  .subscribe-inline h3{font-family:var(--serif);font-size:18px;font-weight:600;margin:0 0 6px;}
+  .subscribe-inline p{font-size:14.5px;color:var(--muted);margin:0 0 18px;line-height:1.55;}
+  .subscribe-inline-form{display:flex; gap:10px; flex-wrap:wrap;}
+  .subscribe-inline-form input[type="text"],
+  .subscribe-inline-form input[type="email"]{
+    font-family:var(--sans); font-size:14.5px; padding:11px 13px; border:1px solid var(--line);
+    border-radius:3px; background:var(--paper); color:var(--ink); flex:1 1 160px; min-width:0;
+  }
+  .subscribe-inline-form input:focus{outline:2px solid var(--teal); outline-offset:1px; border-color:var(--teal);}
+  .subscribe-inline-form button{
+    font-family:var(--sans); font-size:14px; font-weight:500; background:var(--ink); color:var(--paper);
+    border:none; padding:11px 18px; border-radius:3px; cursor:pointer; transition:background .2s ease; flex:0 0 auto;
+  }
+  .subscribe-inline-form button:hover{background:var(--teal);}
+  .subscribe-inline-note{font-size:12px;color:var(--muted);margin-top:8px;display:block;}
+
   footer{border-top:1px solid var(--line);padding:26px 6vw;font-size:13.5px;color:var(--muted);text-align:center;margin-top:40px;}
 
   .whatsapp-float{
@@ -80,6 +101,20 @@
     <p>I think the reforms happening now — startup-specific tax classifications, National Incubation Centers, State Bank rate cuts easing the cost of capital — are the right direction, but they're policy-level fixes to what is often an execution-level problem. A founder in Lahore or Karachi today needs less friction on day-to-day things: faster company registration, dependable electricity for their own operations, and access to even small institutional capital before they're "investable" by bigger funds. Until that early-stage gap closes, we'll keep seeing promising startups plateau right at the point where they'd otherwise start compounding.</p>
   </div>
 </main>
+
+<div class="subscribe-inline">
+  <h3>Enjoyed this piece?</h3>
+  <p>Subscribe to get an email whenever a new opinion post goes up.</p>
+  <form action="https://site.us11.list-manage.com/subscribe/post?u=0ccd4b7c681e781d97c830a73&amp;id=cae2362944&amp;f_id=0075dfe3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscribe-inline-form" target="_blank" novalidate>
+    <input type="text" name="FNAME" id="mce-FNAME" placeholder="Your name">
+    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required placeholder="you@email.com">
+    <div aria-hidden="true" style="position:absolute;left:-5000px;">
+      <input type="text" name="b_0ccd4b7c681e781d97c830a73_cae2362944" tabindex="-1" value="">
+    </div>
+    <button type="submit" id="mc-embedded-subscribe">Subscribe</button>
+  </form>
+  <span class="subscribe-inline-note">Powered by Mailchimp. Unsubscribe anytime.</span>
+</div>
 
 <footer>© Dr. Muzamil Fiaz — Developed by <a href="https://www.instagram.com/mu7_ami1/" target="_blank" rel="noopener">Muzamil</a></footer>
 
