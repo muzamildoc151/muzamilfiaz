@@ -1,4 +1,4 @@
-# Dr. Muzamil Fiaz — CV Website
+# Dr. Muzamil Fiaz — Web
 
 Professional monochrome CV-style static website.
 
